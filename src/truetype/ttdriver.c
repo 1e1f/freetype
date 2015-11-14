@@ -17,20 +17,20 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_SFNT_H
-#include FT_SERVICE_FONT_FORMAT_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <sfnt.h>
+#include <svfntfmt.h>
 
 #ifdef TT_CONFIG_OPTION_GX_VAR_SUPPORT
-#include FT_MULTIPLE_MASTERS_H
-#include FT_SERVICE_MULTIPLE_MASTERS_H
+#include <ftmm.h>
+#include <svmm.h>
 #endif
 
-#include FT_SERVICE_TRUETYPE_ENGINE_H
-#include FT_SERVICE_TRUETYPE_GLYF_H
-#include FT_SERVICE_PROPERTIES_H
-#include FT_TRUETYPE_DRIVER_H
+#include <svtteng.h>
+#include <svttglyf.h>
+#include <svprop.h>
+#include <ftttdrv.h>
 
 #include "ttdriver.h"
 #include "ttgload.h"

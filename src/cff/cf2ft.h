@@ -47,7 +47,7 @@
 #define CF2_NDEBUG
 
 
-#include FT_SYSTEM_H
+#include <ftsystem.h>
 
 #include "cf2glue.h"
 #include "cffgload.h"    /* for CFF_Decoder */

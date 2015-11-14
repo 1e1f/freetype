@@ -20,8 +20,8 @@
 #define __AFMODULE_H__
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
-#include FT_MODULE_H
+#include <ftobjs.h>
+#include <ftmodapi.h>
 
 
 FT_BEGIN_HEADER

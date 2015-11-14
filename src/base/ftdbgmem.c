@@ -17,12 +17,12 @@
 
 
 #include <ft2build.h>
-#include FT_CONFIG_CONFIG_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_MEMORY_H
-#include FT_SYSTEM_H
-#include FT_ERRORS_H
-#include FT_TYPES_H
+#include <ftconfig.h>
+#include <ftdebug.h>
+#include <ftmemory.h>
+#include <ftsystem.h>
+#include <fterrors.h>
+#include <fttypes.h>
 
 
 #ifdef FT_DEBUG_MEMORY
@@ -33,7 +33,7 @@
                     * memory, however.
                     */
 
-#include FT_CONFIG_STANDARD_LIBRARY_H
+#include <ftstdlib.h>
 
   FT_BASE_DEF( const char* )  _ft_debug_file   = NULL;
   FT_BASE_DEF( long )         _ft_debug_lineno = 0;

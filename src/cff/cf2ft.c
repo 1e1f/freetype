@@ -37,7 +37,7 @@
 
 
 #include "cf2ft.h"
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
 #include "cf2font.h"
 #include "cf2error.h"

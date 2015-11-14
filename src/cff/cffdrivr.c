@@ -17,14 +17,14 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_SFNT_H
-#include FT_SERVICE_CID_H
-#include FT_SERVICE_POSTSCRIPT_INFO_H
-#include FT_SERVICE_POSTSCRIPT_NAME_H
-#include FT_SERVICE_TT_CMAP_H
+#include <freetype.h>
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <sfnt.h>
+#include <svcid.h>
+#include <svpsinfo.h>
+#include <svpostnm.h>
+#include <svttcmap.h>
 
 #include "cffdrivr.h"
 #include "cffgload.h"
@@ -35,10 +35,10 @@
 #include "cfferrs.h"
 #include "cffpic.h"
 
-#include FT_SERVICE_FONT_FORMAT_H
-#include FT_SERVICE_GLYPH_DICT_H
-#include FT_SERVICE_PROPERTIES_H
-#include FT_CFF_DRIVER_H
+#include <svfntfmt.h>
+#include <svgldict.h>
+#include <svprop.h>
+#include <ftcffdrv.h>
 
 
   /*************************************************************************/

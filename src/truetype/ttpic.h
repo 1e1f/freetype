@@ -31,10 +31,10 @@ FT_BEGIN_HEADER
 
 #else /* FT_CONFIG_OPTION_PIC */
 
-#include FT_MULTIPLE_MASTERS_H
-#include FT_SERVICE_MULTIPLE_MASTERS_H
-#include FT_SERVICE_TRUETYPE_GLYF_H
-#include FT_SERVICE_PROPERTIES_H
+#include <ftmm.h>
+#include <svmm.h>
+#include <svttglyf.h>
+#include <svprop.h>
 
 
   typedef struct  TTModulePIC_

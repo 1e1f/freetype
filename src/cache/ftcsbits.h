@@ -21,7 +21,7 @@
 
 
 #include <ft2build.h>
-#include FT_CACHE_H
+#include <ftcache.h>
 #include "ftcglyph.h"
 
 

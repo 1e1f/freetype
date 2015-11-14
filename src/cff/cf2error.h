@@ -40,7 +40,7 @@
 #define __CF2ERROR_H__
 
 
-#include FT_MODULE_ERRORS_H
+#include <ftmoderr.h>
 
 #undef __FTERRORS_H__
 
@@ -49,7 +49,7 @@
 #define FT_ERR_BASE    FT_Mod_Err_CF2
 
 
-#include FT_ERRORS_H
+#include <fterrors.h>
 #include "cf2ft.h"
 
 

@@ -3,9 +3,9 @@
  *     -L../../objs/.libs -lfreetype -lz -static
  */
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
+#include <freetype.h>
+#include <ftstream.h>
+#include <psaux.h>
 
   void dump_fontinfo( AFM_FontInfo  fi )
   {

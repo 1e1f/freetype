@@ -17,11 +17,11 @@
 
 
 #include <ft2build.h>
-#include FT_CACHE_H
+#include <ftcache.h>
 #include "ftcsbits.h"
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_ERRORS_H
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <fterrors.h>
 
 #include "ftccback.h"
 #include "ftcerror.h"

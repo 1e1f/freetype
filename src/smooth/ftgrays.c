@@ -259,9 +259,9 @@ typedef ptrdiff_t  FT_PtrDist;
 
 #include <ft2build.h>
 #include "ftgrays.h"
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_OUTLINE_H
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <ftoutln.h>
 
 #include "ftsmerrs.h"
 

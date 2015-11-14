@@ -19,7 +19,7 @@
 #include "afglobal.h"
 #include "afranges.h"
 #include "hbshim.h"
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
 
   /*************************************************************************/

@@ -17,25 +17,25 @@
 
 
 #include <ft2build.h>
-#include FT_LIST_H
-#include FT_OUTLINE_H
-#include FT_INTERNAL_VALIDATE_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_RFORK_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_SFNT_H    /* for SFNT_Load_Table_Func */
-#include FT_TRUETYPE_TABLES_H
-#include FT_TRUETYPE_TAGS_H
-#include FT_TRUETYPE_IDS_H
+#include <ftlist.h>
+#include <ftoutln.h>
+#include <ftvalid.h>
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <ftrfork.h>
+#include <ftstream.h>
+#include <sfnt.h>    /* for SFNT_Load_Table_Func */
+#include <tttables.h>
+#include <tttags.h>
+#include <ttnameid.h>
 
-#include FT_SERVICE_PROPERTIES_H
-#include FT_SERVICE_SFNT_H
-#include FT_SERVICE_POSTSCRIPT_NAME_H
-#include FT_SERVICE_GLYPH_DICT_H
-#include FT_SERVICE_TT_CMAP_H
-#include FT_SERVICE_KERNING_H
-#include FT_SERVICE_TRUETYPE_ENGINE_H
+#include <svprop.h>
+#include <svsfnt.h>
+#include <svpostnm.h>
+#include <svgldict.h>
+#include <svttcmap.h>
+#include <svkern.h>
+#include <svtteng.h>
 
 #ifdef FT_CONFIG_OPTION_MAC_FONTS
 #include "ftbase.h"
@@ -44,7 +44,7 @@
 
 #ifdef FT_DEBUG_LEVEL_TRACE
 
-#include FT_BITMAP_H
+#include <ftbitmap.h>
 
 #if defined( _MSC_VER )      /* Visual C++ (and Intel C++)   */
   /* We disable the warning `conversion from XXX to YYY,     */

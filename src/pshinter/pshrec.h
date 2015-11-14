@@ -33,7 +33,7 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_POSTSCRIPT_HINTS_H
+#include <pshints.h>
 #include "pshglob.h"
 
 

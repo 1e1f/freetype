@@ -19,16 +19,16 @@
 
 
 #include <ft2build.h>
-#include FT_WINFONTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_TRUETYPE_IDS_H
+#include <ftwinfnt.h>
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <ftobjs.h>
+#include <ttnameid.h>
 
 #include "winfnt.h"
 #include "fnterrs.h"
-#include FT_SERVICE_WINFNT_H
-#include FT_SERVICE_FONT_FORMAT_H
+#include <svwinfnt.h>
+#include <svfntfmt.h>
 
   /*************************************************************************/
   /*                                                                       */

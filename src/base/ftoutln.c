@@ -24,11 +24,11 @@
 
 
 #include <ft2build.h>
-#include FT_OUTLINE_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_CALC_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_TRIGONOMETRY_H
+#include <ftoutln.h>
+#include <ftobjs.h>
+#include <ftcalc.h>
+#include <ftdebug.h>
+#include <fttrigon.h>
 
 
   /*************************************************************************/

@@ -23,7 +23,7 @@
 #define __FT_ZOPEN_H__
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
+#include <freetype.h>
 
 
   /*

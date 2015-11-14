@@ -29,7 +29,7 @@
 
 
   /* memset */
-#include FT_CONFIG_STANDARD_LIBRARY_H
+#include <ftstdlib.h>
 
 #define FT_BEGIN_HEADER
 #define FT_END_HEADER

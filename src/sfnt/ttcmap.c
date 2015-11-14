@@ -17,12 +17,12 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
-#include "sferrors.h"           /* must come before FT_INTERNAL_VALIDATE_H */
+#include "sferrors.h"           /* must come before <ftvalid.h> */
 
-#include FT_INTERNAL_VALIDATE_H
-#include FT_INTERNAL_STREAM_H
+#include <ftvalid.h>
+#include <ftstream.h>
 #include "ttload.h"
 #include "ttcmap.h"
 #include "sfntpic.h"

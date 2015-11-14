@@ -17,9 +17,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_CALC_H
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <ftcalc.h>
 #include "pshalgo.h"
 
 #include "pshnterr.h"
@@ -893,7 +893,7 @@
 
 #ifdef DEBUG_ZONES
 
-#include FT_CONFIG_STANDARD_LIBRARY_H
+#include <ftstdlib.h>
 
   static void
   psh_print_zone( PSH_Zone  zone )

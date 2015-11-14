@@ -66,9 +66,9 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_TRUETYPE_TAGS_H
-#include FT_INTERNAL_STREAM_H
+#include <freetype.h>
+#include <tttags.h>
+#include <ftstream.h>
 #include "ftbase.h"
 
   /* This is for Mac OS X.  Without redefinition, OS_INLINE */
@@ -103,7 +103,7 @@
   /* Don't want warnings about our own use of deprecated functions. */
 #define FT_DEPRECATED_ATTRIBUTE
 
-#include FT_MAC_H
+#include <ftmac.h>
 
 #ifndef kATSOptionFlagsUnRestrictedScope /* since Mac OS X 10.1 */
 #define kATSOptionFlagsUnRestrictedScope kATSOptionFlagsDefault

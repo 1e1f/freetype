@@ -22,7 +22,7 @@
 
 FT_BEGIN_HEADER
 
-#include FT_INTERNAL_PIC_H
+#include <ftpic.h>
 
 
 #ifndef FT_CONFIG_OPTION_PIC

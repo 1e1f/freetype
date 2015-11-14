@@ -31,8 +31,8 @@
  */
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_STREAM_H
+#include <ftobjs.h>
+#include <ftstream.h>
 
 
 FT_BEGIN_HEADER

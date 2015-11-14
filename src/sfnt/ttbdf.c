@@ -17,9 +17,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_TRUETYPE_TAGS_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <tttags.h>
 #include "ttbdf.h"
 
 #include "sferrors.h"
@@ -201,7 +201,7 @@
         /* be a bit paranoid for invalid entries here */
         if ( name_offset < bdf->strings_size                    &&
              property_len < bdf->strings_size - name_offset     &&
-             ft_strncmp( property_name,
+             strncmp( property_name,
                          (const char*)bdf->strings + name_offset,
                          bdf->strings_size - name_offset ) == 0 )
         {

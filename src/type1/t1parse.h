@@ -21,8 +21,8 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_TYPE1_TYPES_H
-#include FT_INTERNAL_STREAM_H
+#include <t1types.h>
+#include <ftstream.h>
 
 
 FT_BEGIN_HEADER

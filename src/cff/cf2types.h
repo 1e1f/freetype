@@ -40,7 +40,7 @@
 #define __CF2TYPES_H__
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
+#include <freetype.h>
 
 
 FT_BEGIN_HEADER

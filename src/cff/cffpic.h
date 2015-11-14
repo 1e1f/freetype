@@ -22,7 +22,7 @@
 
 FT_BEGIN_HEADER
 
-#include FT_INTERNAL_PIC_H
+#include <ftpic.h>
 
 
 #ifndef FT_CONFIG_OPTION_PIC
@@ -40,13 +40,13 @@ FT_BEGIN_HEADER
 
 #else /* FT_CONFIG_OPTION_PIC */
 
-#include FT_SERVICE_GLYPH_DICT_H
+#include <svgldict.h>
 #include "cffparse.h"
-#include FT_SERVICE_POSTSCRIPT_INFO_H
-#include FT_SERVICE_POSTSCRIPT_NAME_H
-#include FT_SERVICE_TT_CMAP_H
-#include FT_SERVICE_CID_H
-#include FT_SERVICE_PROPERTIES_H
+#include <svpsinfo.h>
+#include <svpostnm.h>
+#include <svttcmap.h>
+#include <svcid.h>
+#include <svprop.h>
 
 
   typedef struct  CffModulePIC_

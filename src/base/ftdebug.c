@@ -42,8 +42,8 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_INTERNAL_DEBUG_H
+#include <freetype.h>
+#include <ftdebug.h>
 
 
 #ifdef FT_DEBUG_LEVEL_ERROR
@@ -109,7 +109,7 @@
 
   static const char*  ft_trace_toggles[trace_count + 1] =
   {
-#include FT_INTERNAL_TRACE_H
+#include <fttrace.h>
     NULL
   };
 

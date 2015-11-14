@@ -18,14 +18,14 @@
 
 #include <ft2build.h>
 
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_CALC_H
-#include FT_INTERNAL_STREAM_H
-#include FT_ERRORS_H
-#include FT_TRUETYPE_IDS_H
-#include FT_TRUETYPE_TAGS_H
-#include FT_INTERNAL_SFNT_H
-#include FT_CFF_DRIVER_H
+#include <ftdebug.h>
+#include <ftcalc.h>
+#include <ftstream.h>
+#include <fterrors.h>
+#include <ttnameid.h>
+#include <tttags.h>
+#include <sfnt.h>
+#include <ftcffdrv.h>
 
 #include "cffobjs.h"
 #include "cffload.h"
@@ -893,8 +893,8 @@
 
         /* double check */
         if ( !(flags & FT_STYLE_FLAG_BOLD) && cffface->style_name )
-          if ( !ft_strncmp( cffface->style_name, "Bold", 4 )  ||
-               !ft_strncmp( cffface->style_name, "Black", 5 ) )
+          if ( !strncmp( cffface->style_name, "Bold", 4 )  ||
+               !strncmp( cffface->style_name, "Black", 5 ) )
             flags |= FT_STYLE_FLAG_BOLD;
 
         cffface->style_flags = flags;

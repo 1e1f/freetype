@@ -16,10 +16,10 @@
 /***************************************************************************/
 
 #include <ft2build.h>
-#include FT_TYPE1_TABLES_H
-#include FT_TRUETYPE_TABLES_H
-#include FT_INTERNAL_SERVICE_H
-#include FT_SERVICE_POSTSCRIPT_INFO_H
+#include <t1tables.h>
+#include <tttables.h>
+#include <ftserv.h>
+#include <svpsinfo.h>
 
 
   /* documentation is in freetype.h */

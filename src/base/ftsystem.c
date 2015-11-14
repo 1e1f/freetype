@@ -26,12 +26,12 @@
 
 
 #include <ft2build.h>
-#include FT_CONFIG_CONFIG_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_SYSTEM_H
-#include FT_ERRORS_H
-#include FT_TYPES_H
+#include <ftconfig.h>
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <ftsystem.h>
+#include <fterrors.h>
+#include <fttypes.h>
 
 
   /*************************************************************************/

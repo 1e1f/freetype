@@ -17,9 +17,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_CALC_H
+#include <psaux.h>
+#include <ftdebug.h>
+#include <ftcalc.h>
 
 #include "psobjs.h"
 #include "psconv.h"

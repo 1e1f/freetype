@@ -21,14 +21,14 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_MEMORY_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_GZIP_H
-#include FT_CONFIG_STANDARD_LIBRARY_H
+#include <ftmemory.h>
+#include <ftstream.h>
+#include <ftdebug.h>
+#include <ftgzip.h>
+#include <ftstdlib.h>
 
 
-#include FT_MODULE_ERRORS_H
+#include <ftmoderr.h>
 
 #undef __FTERRORS_H__
 
@@ -36,7 +36,7 @@
 #define FT_ERR_PREFIX  Gzip_Err_
 #define FT_ERR_BASE    FT_Mod_Err_Gzip
 
-#include FT_ERRORS_H
+#include <fterrors.h>
 
 
 #ifdef FT_CONFIG_OPTION_USE_ZLIB

@@ -34,10 +34,10 @@
 
 #include <ft2build.h>
 
-#include FT_FREETYPE_H
-#include FT_OUTLINE_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
+#include <freetype.h>
+#include <ftoutln.h>
+#include <ftobjs.h>
+#include <ftdebug.h>
 
 #include "afblue.h"
 
@@ -54,7 +54,7 @@ FT_BEGIN_HEADER
 
 #ifdef FT_DEBUG_AUTOFIT
 
-#include FT_CONFIG_STANDARD_LIBRARY_H
+#include <ftstdlib.h>
 
 extern int    _af_debug_disable_horz_hints;
 extern int    _af_debug_disable_vert_hints;

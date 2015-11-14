@@ -46,10 +46,10 @@
   void*  _af_debug_hints = _af_debug_hints_rec;
 #endif
 
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_AUTOHINTER_H
-#include FT_SERVICE_PROPERTIES_H
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <ftautoh.h>
+#include <svprop.h>
 
 
   /*************************************************************************/

@@ -22,7 +22,7 @@
 
 FT_BEGIN_HEADER
 
-#include FT_INTERNAL_PIC_H
+#include <ftpic.h>
 
 #ifndef FT_CONFIG_OPTION_PIC
 
@@ -36,10 +36,10 @@ FT_BEGIN_HEADER
 
 #else /* FT_CONFIG_OPTION_PIC */
 
-#include FT_GLYPH_H
+#include <ftglyph.h>
 
 #ifdef FT_CONFIG_OPTION_GUESSING_EMBEDDED_RFORK
-#include FT_INTERNAL_RFORK_H
+#include <ftrfork.h>
 #endif
 
 

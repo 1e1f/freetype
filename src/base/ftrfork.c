@@ -25,9 +25,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_RFORK_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <ftrfork.h>
 #include "basepic.h"
 #include "ftbase.h"
 

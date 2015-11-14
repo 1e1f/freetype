@@ -33,10 +33,10 @@
 
 #include <ft2build.h>
 
-#include FT_FREETYPE_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_OBJECTS_H
+#include <freetype.h>
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <ftobjs.h>
 
 #include "bdf.h"
 #include "bdferror.h"
@@ -174,7 +174,7 @@
   /* whether it is a whitespace or NULL.                                 */
   /* `property' is a constant string of length `n' to compare with.      */
 #define _bdf_strncmp( name, property, n )      \
-          ( ft_strncmp( name, property, n ) || \
+          ( strncmp( name, property, n ) || \
             !( name[n] == ' '  ||              \
                name[n] == '\0' ||              \
                name[n] == '\n' ||              \

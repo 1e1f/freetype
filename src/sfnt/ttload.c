@@ -18,9 +18,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_TRUETYPE_TAGS_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <tttags.h>
 #include "ttload.h"
 
 #include "sferrors.h"

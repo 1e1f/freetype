@@ -45,8 +45,8 @@
 
 #include <ft2build.h>
 #include "gxvalid.h"
-#include FT_INTERNAL_DEBUG_H
-#include FT_SFNT_NAMES_H
+#include <ftdebug.h>
+#include <ftsnames.h>
 
 
 FT_BEGIN_HEADER

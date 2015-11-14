@@ -21,7 +21,7 @@
 
 
 #include "t42objs.h"
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
+#include <psaux.h>
 
 
 FT_BEGIN_HEADER

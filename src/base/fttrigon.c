@@ -30,9 +30,9 @@
   /*************************************************************************/
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_CALC_H
-#include FT_TRIGONOMETRY_H
+#include <ftobjs.h>
+#include <ftcalc.h>
+#include <fttrigon.h>
 
 
   /* the Cordic shrink factor 0.858785336480436 * 2^32 */

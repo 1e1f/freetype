@@ -17,12 +17,12 @@
 
 
 #include <ft2build.h>
-#include FT_STROKER_H
-#include FT_TRIGONOMETRY_H
-#include FT_OUTLINE_H
-#include FT_INTERNAL_MEMORY_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_OBJECTS_H
+#include <ftstroke.h>
+#include <fttrigon.h>
+#include <ftoutln.h>
+#include <ftmemory.h>
+#include <ftdebug.h>
+#include <ftobjs.h>
 
 
   /* documentation is in ftstroke.h */

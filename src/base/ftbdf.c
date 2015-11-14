@@ -17,10 +17,10 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
-#include FT_INTERNAL_OBJECTS_H
-#include FT_SERVICE_BDF_H
+#include <ftobjs.h>
+#include <svbdf.h>
 
 
   /* documentation is in ftbdf.h */

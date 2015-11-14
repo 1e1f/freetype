@@ -37,7 +37,7 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_CALC_H
+#include <ftcalc.h>
 
 #include "cf2ft.h"
 

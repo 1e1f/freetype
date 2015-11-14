@@ -22,7 +22,7 @@
 
 FT_BEGIN_HEADER
 
-#include FT_INTERNAL_PIC_H
+#include <ftpic.h>
 
 
 #ifndef FT_CONFIG_OPTION_PIC
@@ -38,7 +38,7 @@ FT_BEGIN_HEADER
 #else /* FT_CONFIG_OPTION_PIC */
 
   /* some include files required for members of AFModulePIC */
-#include FT_SERVICE_PROPERTIES_H
+#include <svprop.h>
 
 #include "aftypes.h"
 

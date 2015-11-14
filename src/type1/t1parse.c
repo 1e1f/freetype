@@ -34,9 +34,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <psaux.h>
 
 #include "t1parse.h"
 
@@ -374,7 +374,7 @@
 
       while ( cur < limit )
       {
-        if ( *cur == 'e' && ft_strncmp( (char*)cur, "eexec", 5 ) == 0 )
+        if ( *cur == 'e' && strncmp( (char*)cur, "eexec", 5 ) == 0 )
           goto Found;
 
         T1_Skip_PS_Token( parser );

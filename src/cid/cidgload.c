@@ -19,10 +19,10 @@
 #include <ft2build.h>
 #include "cidload.h"
 #include "cidgload.h"
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_OUTLINE_H
-#include FT_INTERNAL_CALC_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <ftoutln.h>
+#include <ftcalc.h>
 
 #include "ciderrs.h"
 

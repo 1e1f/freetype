@@ -22,11 +22,11 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_TYPE1_TABLES_H
-#include FT_INTERNAL_SERVICE_H
-#include FT_SERVICE_POSTSCRIPT_CMAPS_H
-#include FT_INTERNAL_POSTSCRIPT_HINTS_H
+#include <freetype.h>
+#include <t1tables.h>
+#include <ftserv.h>
+#include <svpscmap.h>
+#include <pshints.h>
 
 
 FT_BEGIN_HEADER

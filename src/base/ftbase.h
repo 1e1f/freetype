@@ -21,7 +21,7 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
+#include <ftobjs.h>
 
 
 FT_BEGIN_HEADER

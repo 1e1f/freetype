@@ -17,8 +17,8 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_INTERNAL_OBJECTS_H
+#include <freetype.h>
+#include <ftobjs.h>
 #include "sfntpic.h"
 #include "sferrors.h"
 

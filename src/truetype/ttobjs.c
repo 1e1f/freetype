@@ -17,11 +17,11 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_TRUETYPE_TAGS_H
-#include FT_INTERNAL_SFNT_H
-#include FT_TRUETYPE_DRIVER_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <tttags.h>
+#include <sfnt.h>
+#include <ftttdrv.h>
 
 #include "ttgload.h"
 #include "ttpload.h"
@@ -33,7 +33,7 @@
 #endif
 
 #ifdef TT_CONFIG_OPTION_UNPATENTED_HINTING
-#include FT_TRUETYPE_UNPATENTED_H
+#include <ttunpat.h>
 #endif
 
 #ifdef TT_CONFIG_OPTION_GX_VAR_SUPPORT
@@ -470,7 +470,7 @@
 
         error = FT_Get_Glyph_Name( ttface, glyph_index, buf, 8 );
         if ( !error                                            &&
-             buf[0] == '.' && !ft_strncmp( buf, ".notdef", 8 ) )
+             buf[0] == '.' && !strncmp( buf, ".notdef", 8 ) )
           result = TRUE;
       }
     }

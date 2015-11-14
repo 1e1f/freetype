@@ -21,9 +21,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
-#include FT_MULTIPLE_MASTERS_H
+#include <ftstream.h>
+#include <psaux.h>
+#include <ftmm.h>
 
 #include "t1parse.h"
 

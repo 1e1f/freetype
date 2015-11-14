@@ -17,9 +17,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_SERVICE_POSTSCRIPT_CMAPS_H
+#include <ftdebug.h>
+#include <ftobjs.h>
+#include <svpscmap.h>
 
 #include "psmodule.h"
 #include "pstables.h"

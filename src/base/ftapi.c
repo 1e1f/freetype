@@ -17,13 +17,13 @@
 
 
 #include <ft2build.h>
-#include FT_LIST_H
-#include FT_OUTLINE_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_TRUETYPE_TABLES_H
-#include FT_OUTLINE_H
+#include <ftlist.h>
+#include <ftoutln.h>
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <tttables.h>
+#include <ftoutln.h>
 
 
   /*************************************************************************/

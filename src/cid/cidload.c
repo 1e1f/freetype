@@ -17,10 +17,10 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_CONFIG_CONFIG_H
-#include FT_MULTIPLE_MASTERS_H
-#include FT_INTERNAL_TYPE1_TYPES_H
+#include <ftdebug.h>
+#include <ftconfig.h>
+#include <ftmm.h>
+#include <t1types.h>
 
 #include "cidload.h"
 
@@ -327,7 +327,7 @@
         for ( ; cur < newlimit; cur++ )
         {
           if ( *cur == '%'                                            &&
-               ft_strncmp( (char*)cur, "%ADOBeginFontDict", 17 ) == 0 )
+               strncmp( (char*)cur, "%ADOBeginFontDict", 17 ) == 0 )
           {
             /* if /FDArray was found, then cid->num_dicts is > 0, and */
             /* we can start increasing parser->num_dict               */

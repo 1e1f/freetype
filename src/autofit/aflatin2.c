@@ -16,7 +16,7 @@
 /***************************************************************************/
 
 
-#include FT_ADVANCES_H
+#include <ftadvanc.h>
 
 #include "afglobal.h"
 #include "aflatin.h"

@@ -61,11 +61,11 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_CONFIG_CONFIG_H
-#include FT_MULTIPLE_MASTERS_H
-#include FT_INTERNAL_TYPE1_TYPES_H
-#include FT_INTERNAL_CALC_H
+#include <ftdebug.h>
+#include <ftconfig.h>
+#include <ftmm.h>
+#include <t1types.h>
+#include <ftcalc.h>
 
 #include "t1load.h"
 #include "t1errors.h"
@@ -1344,15 +1344,15 @@
     else
     {
       if ( cur + 17 < limit                                            &&
-           ft_strncmp( (const char*)cur, "StandardEncoding", 16 ) == 0 )
+           strncmp( (const char*)cur, "StandardEncoding", 16 ) == 0 )
         face->type1.encoding_type = T1_ENCODING_TYPE_STANDARD;
 
       else if ( cur + 15 < limit                                          &&
-                ft_strncmp( (const char*)cur, "ExpertEncoding", 14 ) == 0 )
+                strncmp( (const char*)cur, "ExpertEncoding", 14 ) == 0 )
         face->type1.encoding_type = T1_ENCODING_TYPE_EXPERT;
 
       else if ( cur + 18 < limit                                             &&
-                ft_strncmp( (const char*)cur, "ISOLatin1Encoding", 17 ) == 0 )
+                strncmp( (const char*)cur, "ISOLatin1Encoding", 17 ) == 0 )
         face->type1.encoding_type = T1_ENCODING_TYPE_ISOLATIN1;
 
       else
@@ -1419,7 +1419,7 @@
       /* If we are out of data, or if the next token isn't `dup', */
       /* we are done.                                             */
       if ( parser->root.cursor + 4 >= parser->root.limit          ||
-          ft_strncmp( (char*)parser->root.cursor, "dup", 3 ) != 0 )
+          strncmp( (char*)parser->root.cursor, "dup", 3 ) != 0 )
         break;
 
       T1_Skip_PS_Token( parser );       /* `dup' */
@@ -1439,7 +1439,7 @@
       T1_Skip_Spaces  ( parser );
 
       if ( parser->root.cursor + 4 < parser->root.limit            &&
-           ft_strncmp( (char*)parser->root.cursor, "put", 3 ) == 0 )
+           strncmp( (char*)parser->root.cursor, "put", 3 ) == 0 )
       {
         T1_Skip_PS_Token( parser ); /* skip `put' */
         T1_Skip_Spaces  ( parser );

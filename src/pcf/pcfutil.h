@@ -30,7 +30,7 @@ THE SOFTWARE.
 
 
 #include <ft2build.h>
-#include FT_CONFIG_CONFIG_H
+#include <ftconfig.h>
 
 
 FT_BEGIN_HEADER

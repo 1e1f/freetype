@@ -18,9 +18,9 @@
 
 #include "t42parse.h"
 #include "t42error.h"
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <psaux.h>
 
 
   /*************************************************************************/
@@ -482,15 +482,15 @@
     else
     {
       if ( cur + 17 < limit                                            &&
-           ft_strncmp( (const char*)cur, "StandardEncoding", 16 ) == 0 )
+           strncmp( (const char*)cur, "StandardEncoding", 16 ) == 0 )
         face->type1.encoding_type = T1_ENCODING_TYPE_STANDARD;
 
       else if ( cur + 15 < limit                                          &&
-                ft_strncmp( (const char*)cur, "ExpertEncoding", 14 ) == 0 )
+                strncmp( (const char*)cur, "ExpertEncoding", 14 ) == 0 )
         face->type1.encoding_type = T1_ENCODING_TYPE_EXPERT;
 
       else if ( cur + 18 < limit                                             &&
-                ft_strncmp( (const char*)cur, "ISOLatin1Encoding", 17 ) == 0 )
+                strncmp( (const char*)cur, "ISOLatin1Encoding", 17 ) == 0 )
         face->type1.encoding_type = T1_ENCODING_TYPE_ISOLATIN1;
 
       else
@@ -1097,7 +1097,7 @@
 
       /* look for `FontDirectory' which causes problems for some fonts */
       if ( *cur == 'F' && cur + 25 < limit                    &&
-           ft_strncmp( (char*)cur, "FontDirectory", 13 ) == 0 )
+           strncmp( (char*)cur, "FontDirectory", 13 ) == 0 )
       {
         FT_Byte*  cur2;
 
@@ -1111,7 +1111,7 @@
         while ( cur < limit )
         {
           if ( *cur == 'k' && cur + 5 < limit             &&
-                ft_strncmp( (char*)cur, "known", 5 ) == 0 )
+                strncmp( (char*)cur, "known", 5 ) == 0 )
             break;
 
           T1_Skip_PS_Token( parser );

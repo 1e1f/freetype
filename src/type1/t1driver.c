@@ -27,16 +27,16 @@
 #include "t1afm.h"
 #endif
 
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
+#include <ftdebug.h>
+#include <ftstream.h>
 
-#include FT_SERVICE_MULTIPLE_MASTERS_H
-#include FT_SERVICE_GLYPH_DICT_H
-#include FT_SERVICE_FONT_FORMAT_H
-#include FT_SERVICE_POSTSCRIPT_NAME_H
-#include FT_SERVICE_POSTSCRIPT_CMAPS_H
-#include FT_SERVICE_POSTSCRIPT_INFO_H
-#include FT_SERVICE_KERNING_H
+#include <svmm.h>
+#include <svgldict.h>
+#include <svfntfmt.h>
+#include <svpostnm.h>
+#include <svpscmap.h>
+#include <svpsinfo.h>
+#include <svkern.h>
 
 
   /*************************************************************************/

@@ -30,9 +30,9 @@
 
 
 #include <ft2build.h>
-#include FT_CONFIG_CONFIG_H
-#include FT_TYPES_H
-#include FT_ERRORS_H
+#include <ftconfig.h>
+#include <fttypes.h>
+#include <fterrors.h>
 
 
 FT_BEGIN_HEADER

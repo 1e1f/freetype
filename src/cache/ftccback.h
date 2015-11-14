@@ -19,7 +19,7 @@
 #define __FTCCBACK_H__
 
 #include <ft2build.h>
-#include FT_CACHE_H
+#include <ftcache.h>
 #include "ftcmru.h"
 #include "ftcimage.h"
 #include "ftcmanag.h"

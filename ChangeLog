@@ -2600,7 +2600,7 @@
 
 	* src/bdf/bdflib.c (_bdf_strncmp): New macro that checks one
 	character more than `strncmp'.
-	s/ft_strncmp/_bdf_strncmp/ everywhere.
+	s/strncmp/_bdf_strncmp/ everywhere.
 
 2014-11-06  Werner Lemberg  <wl@gnu.org>
 
@@ -3813,7 +3813,7 @@
 	line's length, an out-of-bounds read might happen since `memcmp'
 	doesn't stop properly at the string end.
 
-	* src/bdf/bdflib.c: s/ft_memcmp/ft_strncmp/ to make comparisons
+	* src/bdf/bdflib.c: s/ft_memcmp/strncmp/ to make comparisons
 	stop at string ends.
 
 2014-02-17  suzuki toshiya  <mpsuzuki@hiroshima-u.ac.jp>

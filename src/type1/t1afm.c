@@ -18,9 +18,9 @@
 
 #include <ft2build.h>
 #include "t1afm.h"
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <psaux.h>
 #include "t1errors.h"
 
 
@@ -69,7 +69,7 @@
 
       if ( gname && gname[0] == name[0]        &&
            ft_strlen( gname ) == len           &&
-           ft_strncmp( gname, name, len ) == 0 )
+           strncmp( gname, name, len ) == 0 )
         return n;
     }
 

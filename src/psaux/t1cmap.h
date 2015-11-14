@@ -20,8 +20,8 @@
 #define __T1CMAP_H__
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_TYPE1_TYPES_H
+#include <ftobjs.h>
+#include <t1types.h>
 
 FT_BEGIN_HEADER
 

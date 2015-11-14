@@ -1,0 +1,14 @@
+builds/*
+devel/*
+docs/*
+objs/*
+src/tools/*
+ChangeLog*
+*.sh
+.mailmap
+configure
+*Jam*
+*Makefile
+modules.cfg
+version.sed
+vms_make.com

@@ -31,7 +31,7 @@
 #include "gxvalid.h"
 #include "gxvcommn.h"
 
-#include FT_SFNT_NAMES_H
+#include <ftsnames.h>
 
 
   typedef struct  GXV_mort_featureRec_

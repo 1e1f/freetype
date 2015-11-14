@@ -17,12 +17,12 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
-#include FT_CACHE_H
+#include <freetype.h>
+#include <ftcache.h>
 #include "ftcmanag.h"
-#include FT_INTERNAL_MEMORY_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
+#include <ftmemory.h>
+#include <ftobjs.h>
+#include <ftdebug.h>
 
 #include "ftccback.h"
 #include "ftcerror.h"

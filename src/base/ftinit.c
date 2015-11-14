@@ -38,10 +38,10 @@
 
 
 #include <ft2build.h>
-#include FT_CONFIG_CONFIG_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_MODULE_H
+#include <ftconfig.h>
+#include <ftobjs.h>
+#include <ftdebug.h>
+#include <ftmodapi.h>
 #include "basepic.h"
 
 
@@ -65,7 +65,7 @@
 #define FT_USE_MODULE( type, x )  extern const type  x;
 #endif
 
-#include FT_CONFIG_MODULES_H
+#include <ftmodule.h>
 
 #undef  FT_USE_MODULE
 #define FT_USE_MODULE( type, x )  (const FT_Module_Class*)&(x),
@@ -73,7 +73,7 @@
   static
   const FT_Module_Class*  const ft_default_modules[] =
   {
-#include FT_CONFIG_MODULES_H
+#include <ftmodule.h>
     0
   };
 
@@ -97,7 +97,7 @@
   FT_Destroy_Class_ ## x( FT_Library        library,        \
                           FT_Module_Class*  clazz );
 
-#include FT_CONFIG_MODULES_H
+#include <ftmodule.h>
 
   /* count all module classes */
 #undef  FT_USE_MODULE
@@ -105,7 +105,7 @@
 
   enum
   {
-#include FT_CONFIG_MODULES_H
+#include <ftmodule.h>
     FT_NUM_MODULE_CLASSES
   };
 
@@ -135,7 +135,7 @@
     classes = pic_container->default_module_classes;
     i       = 0;
 
-#include FT_CONFIG_MODULES_H
+#include <ftmodule.h>
 
     FT_FREE( classes );
     pic_container->default_module_classes = NULL;
@@ -177,7 +177,7 @@
 
     i = 0;
 
-#include FT_CONFIG_MODULES_H
+#include <ftmodule.h>
 
   Exit:
     if ( error )

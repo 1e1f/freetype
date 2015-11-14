@@ -17,9 +17,9 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_INTERNAL_STREAM_H
+#include <ftdebug.h>
+#include <ftobjs.h>
+#include <ftstream.h>
 
 #include "cidparse.h"
 
@@ -70,7 +70,7 @@
     if ( FT_FRAME_ENTER( 31 ) )
       goto Exit;
 
-    if ( ft_strncmp( (char *)stream->cursor,
+    if ( strncmp( (char *)stream->cursor,
                      "%!PS-Adobe-3.0 Resource-CIDFont", 31 ) )
     {
       FT_TRACE2(( "  not a CID-keyed font\n" ));
@@ -114,13 +114,13 @@
 
         for ( p = buffer; p < limit; p++ )
         {
-          if ( p[0] == 'S' && ft_strncmp( (char*)p, "StartData", 9 ) == 0 )
+          if ( p[0] == 'S' && strncmp( (char*)p, "StartData", 9 ) == 0 )
           {
             /* save offset of binary data after `StartData' */
             offset += (FT_ULong)( p - buffer + 10 );
             goto Found;
           }
-          else if ( p[1] == 's' && ft_strncmp( (char*)p, "/sfnts", 6 ) == 0 )
+          else if ( p[1] == 's' && strncmp( (char*)p, "/sfnts", 6 ) == 0 )
           {
             offset += (FT_ULong)( p - buffer + 7 );
             goto Found;
@@ -173,9 +173,9 @@
         goto Exit;
       }
 
-      if ( cur[0] == 'S' && ft_strncmp( (char*)cur, "StartData", 9 ) == 0 )
+      if ( cur[0] == 'S' && strncmp( (char*)cur, "StartData", 9 ) == 0 )
       {
-        if ( ft_strncmp( (char*)arg1, "(Hex)", 5 ) == 0 )
+        if ( strncmp( (char*)arg1, "(Hex)", 5 ) == 0 )
         {
           FT_Long  tmp = ft_atol( (const char *)arg2 );
 
@@ -191,7 +191,7 @@
 
         goto Exit;
       }
-      else if ( cur[1] == 's' && ft_strncmp( (char*)cur, "/sfnts", 6 ) == 0 )
+      else if ( cur[1] == 's' && strncmp( (char*)cur, "/sfnts", 6 ) == 0 )
       {
         FT_TRACE2(( "cid_parser_new: cannot handle Type 11 fonts\n" ));
         error = FT_THROW( Unknown_File_Format );

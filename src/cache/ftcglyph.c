@@ -17,10 +17,10 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_OBJECTS_H
-#include FT_CACHE_H
+#include <ftobjs.h>
+#include <ftcache.h>
 #include "ftcglyph.h"
-#include FT_ERRORS_H
+#include <fterrors.h>
 
 #include "ftccback.h"
 #include "ftcerror.h"

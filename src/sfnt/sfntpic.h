@@ -22,7 +22,7 @@
 
 FT_BEGIN_HEADER
 
-#include FT_INTERNAL_PIC_H
+#include <ftpic.h>
 
 
 #ifndef FT_CONFIG_OPTION_PIC
@@ -40,19 +40,19 @@ FT_BEGIN_HEADER
 #else /* FT_CONFIG_OPTION_PIC */
 
   /* some include files required for members of sfntModulePIC */
-#include FT_SERVICE_GLYPH_DICT_H
-#include FT_SERVICE_POSTSCRIPT_NAME_H
-#include FT_SERVICE_SFNT_H
-#include FT_SERVICE_TT_CMAP_H
+#include <svgldict.h>
+#include <svpostnm.h>
+#include <svsfnt.h>
+#include <svttcmap.h>
 
 #ifdef TT_CONFIG_OPTION_BDF
 #include "ttbdf.h"
-#include FT_SERVICE_BDF_H
+#include <svbdf.h>
 #endif
 
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
-#include FT_INTERNAL_SFNT_H
+#include <ftdebug.h>
+#include <ftstream.h>
+#include <sfnt.h>
 #include "ttcmap.h"
 
 

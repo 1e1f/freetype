@@ -18,8 +18,8 @@
 
 #include "afhints.h"
 #include "aferrors.h"
-#include FT_INTERNAL_CALC_H
-#include FT_INTERNAL_DEBUG_H
+#include <ftcalc.h>
+#include <ftdebug.h>
 
 
   /*************************************************************************/
@@ -175,7 +175,7 @@
 
 #ifdef FT_DEBUG_AUTOFIT
 
-#include FT_CONFIG_STANDARD_LIBRARY_H
+#include <ftstdlib.h>
 
   /* The dump functions are used in the `ftgrid' demo program, too. */
 #define AF_DUMP( varformat )          \

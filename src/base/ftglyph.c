@@ -29,12 +29,12 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
-#include FT_GLYPH_H
-#include FT_OUTLINE_H
-#include FT_BITMAP_H
-#include FT_INTERNAL_OBJECTS_H
+#include <ftglyph.h>
+#include <ftoutln.h>
+#include <ftbitmap.h>
+#include <ftobjs.h>
 
 #include "basepic.h"
 

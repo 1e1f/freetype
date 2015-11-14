@@ -21,10 +21,10 @@
 #include "pfrgload.h"
 #include "pfrcmap.h"
 #include "pfrsbit.h"
-#include FT_OUTLINE_H
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_CALC_H
-#include FT_TRUETYPE_IDS_H
+#include <ftoutln.h>
+#include <ftdebug.h>
+#include <ftcalc.h>
+#include <ttnameid.h>
 
 #include "pfrerror.h"
 

@@ -22,7 +22,7 @@
 
 #include <ft2build.h>
 #include "ttload.h"
-#include FT_BDF_H
+#include <ftbdf.h>
 
 
 FT_BEGIN_HEADER

@@ -26,11 +26,11 @@
 
 
 #include <ft2build.h>
-#include FT_TRUETYPE_TABLES_H
-#include FT_TRUETYPE_TAGS_H
-#include FT_GX_VALIDATE_H
-#include FT_INTERNAL_OBJECTS_H
-#include FT_SERVICE_GX_VALIDATE_H
+#include <tttables.h>
+#include <tttags.h>
+#include <ftgxval.h>
+#include <ftobjs.h>
+#include <svgxval.h>
 
 #include "gxvmod.h"
 #include "gxvalid.h"

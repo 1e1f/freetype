@@ -16,11 +16,11 @@
 /***************************************************************************/
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
-#include FT_INTERNAL_OBJECTS_H
-#include FT_SERVICE_OPENTYPE_VALIDATE_H
-#include FT_OPENTYPE_VALIDATE_H
+#include <ftobjs.h>
+#include <svotval.h>
+#include <ftotval.h>
 
 
   /* documentation is in ftotval.h */

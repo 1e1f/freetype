@@ -22,7 +22,7 @@
 
 FT_BEGIN_HEADER
 
-#include FT_INTERNAL_PIC_H
+#include <ftpic.h>
 
 #ifndef FT_CONFIG_OPTION_PIC
 
@@ -31,7 +31,7 @@ FT_BEGIN_HEADER
 
 #else /* FT_CONFIG_OPTION_PIC */
 
-#include FT_SERVICE_POSTSCRIPT_CMAPS_H
+#include <svpscmap.h>
 
   typedef struct  PSModulePIC_
   {

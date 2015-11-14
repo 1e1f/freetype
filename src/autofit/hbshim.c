@@ -17,7 +17,7 @@
 
 
 #include <ft2build.h>
-#include FT_FREETYPE_H
+#include <freetype.h>
 #include "afglobal.h"
 #include "aftypes.h"
 #include "hbshim.h"

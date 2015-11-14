@@ -17,10 +17,10 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
+#include <ftdebug.h>
 
-#include FT_ADVANCES_H
-#include FT_INTERNAL_OBJECTS_H
+#include <ftadvanc.h>
+#include <ftobjs.h>
 
 
   static FT_Error

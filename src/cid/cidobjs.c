@@ -17,15 +17,15 @@
 
 
 #include <ft2build.h>
-#include FT_INTERNAL_DEBUG_H
-#include FT_INTERNAL_STREAM_H
+#include <ftdebug.h>
+#include <ftstream.h>
 
 #include "cidgload.h"
 #include "cidload.h"
 
-#include FT_SERVICE_POSTSCRIPT_CMAPS_H
-#include FT_INTERNAL_POSTSCRIPT_AUX_H
-#include FT_INTERNAL_POSTSCRIPT_HINTS_H
+#include <svpscmap.h>
+#include <psaux.h>
+#include <pshints.h>
 
 #include "ciderrs.h"
 
